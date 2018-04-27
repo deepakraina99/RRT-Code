@@ -10,13 +10,15 @@ This can be used to do path planning in two-dimensional space using rapidly expl
 ### Important parameters
   - bias: its value will be in the range of 0 to 10. Large value will help in faster convergence of path towards final position.
   - radius: tolerance of position for goal position.
-  - max,min: generates the randoms numbers in between max and min.
+  - max,min: it can be used to specify the limits of workspace
   - lambda: convergence rate parameter
 
 ### How to run the code
-  - Enter the initial and final position
-  - Press Ctrl+R
-  - Writes the path to tree1.txt file and shows the plot.
+  - Open the rrt_planning.pro using Qt-creator and click on configure project. Press Ctrl+B to compile the code.
+  - Open the main.cpp file in source directory and enter the initial and final position of path.
+  - Change bias,radius parmeter in main.cpp and max,min,lambda in gen_new_node.cpp file as per requirement.
+  - Press Ctrl+R to run the code.
+  - the path will be written to tree1.txt file and plot of RRT tree will be shown.
 
 ## Authors
 

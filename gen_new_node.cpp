@@ -117,7 +117,7 @@ void gen_new_node(int i, int bias, int n, double sd[], std::vector< std::vector<
     }
 
     // Parameters
-    double lambda=0.05; /*convergence rate*/
+    double lambda=0.1; /*convergence rate*/
 
     //position and velocity of parent feature vector
     double sp[2]={tree1[0][ix], tree1[1][ix]};
